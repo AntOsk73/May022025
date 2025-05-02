@@ -1,7 +1,7 @@
 ressource
 "azurerm_ressource_group"
-"terraformantoinemay022025"{
+"antoineform"{
   name = 
-  "mcit_ressource_group_antoine"
+  "mcit_ressource_group_antoineosky"
   location="canadacentral"
   }
