@@ -1,7 +1,7 @@
 ressource
-"azurerm_ressource_group"
+"azurerm_resource_group"
 "antoineform"{
   name = 
-  "mcit_ressource_group_antoineosky"
+  "mcit_resource_group_antoineosky"
   location="canadacentral"
   }
