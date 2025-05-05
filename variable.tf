@@ -16,4 +16,5 @@ variable "client_id"{
   
 variable "storageaccount_id"{
   type=string
+  default="mcitstoragemay"
 }
