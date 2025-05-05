@@ -14,3 +14,6 @@ variable "client_id"{
   type=string
 }
   
+variable "storageaccount_id"{
+  type=string
+}
