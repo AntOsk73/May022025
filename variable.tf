@@ -14,7 +14,7 @@ variable "client_id"{
   type=string
 }
   
-variable "storage_account_name"{
+variable "antoinestorageaccount"{
   type=string
   default="antoskstoragemay"
 }
