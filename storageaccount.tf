@@ -4,6 +4,8 @@ resource "azurerm_storage_account" "mcitstorage" {
   location                 = azurerm_resource_group.antoineoskyform.location
   account_tier             = "Standard"
   account_replication_type = "LRS"
+  account_tier             = "premium"
+  account_replication_type = "ZRS"
 
   tags = {
     environment = "dev"
