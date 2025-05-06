@@ -29,7 +29,7 @@ variable "account_replication_type"{
   default="ZRS"
 }
 
-variable "account_replication_type"{
+variable "environment = "dev""{
   type=string
-  default="ZRS"
+  default="prod"
 }
