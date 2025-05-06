@@ -20,11 +20,11 @@ variable "antoinestorageaccount"{
 }
 
 variable "account_tier"{
-  type=premium
-  default="Standard"
+  type=string
+  default="premium"
 }
 
 variable "account_replication_type"{
-  type=ZRS
-  default="LRS"
+  type=string
+  default="ZRS"
 }
