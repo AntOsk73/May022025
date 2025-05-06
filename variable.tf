@@ -18,3 +18,13 @@ variable "antoinestorageaccount"{
   type=string
   default="antoskstoragemay"
 }
+
+variable "account_tier"{
+  type=premium
+  default="Standard"
+}
+
+variable "account_replication_type"{
+  type=ZRS
+  default="LRS"
+}
