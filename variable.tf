@@ -28,3 +28,8 @@ variable "account_replication_type"{
   type=string
   default="ZRS"
 }
+
+variable "account_replication_type"{
+  type=string
+  default="ZRS"
+}
