@@ -9,3 +9,17 @@ resource "azurerm_storage_account" "mcitstorage" {
     environment = var.environment
 }
 }
+
+resource "azurerm_storage_container" "antoinecontainer" {
+  name                  = "content"
+  storage_account_id    = azurerm_storage_account.antoinecontainer.id
+  container_access_type = "private"
+}
+
+resource "azurerm_storage_blob" "antoinecontainer" {
+  name                   = "my-awesome-content.zip"
+  storage_account_name   = azurerm_storage_account.antoinecontainer.name
+  storage_container_name = azurerm_storage_container.antoinecontainer.name
+  type                   = "Block"
+  source                 = "some-local-file.zip"
+}
