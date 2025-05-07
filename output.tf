@@ -9,5 +9,5 @@ output "lengthsa"{
     value=local.lengthsa
 
 output "wintersportslist"{
-    value=[for sport in local
+    value=[for sport in local.winterlistOfSports:sport]
 }
