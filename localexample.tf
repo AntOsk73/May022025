@@ -1,4 +1,4 @@
 locals{
   servicename="bessamemucho"
-  forum="abracadabramcit"
+  forum="bessamemucho"
   lengthsa=length(local.servicename)
