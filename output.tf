@@ -18,8 +18,7 @@ output "wintersportslist"{
    value=[for sport in local.total_output:sport]
 
 }
-  
-}
+
    output "characterst"{
    value=[for sport in local.characters:sport]
 
