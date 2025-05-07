@@ -11,3 +11,4 @@ winterlistOfSports=["weightlifting","swimming","jogging"]
       character => local.enemies_destroyed
 
 }
+}
