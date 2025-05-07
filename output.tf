@@ -23,3 +23,7 @@ output "wintersportslist"{
    value=[for sport in local.characters:sport]
 
 }
+
+output "total_sum" {
+  value = sum([for total in local.total_output : tonumber(total)])
+}
