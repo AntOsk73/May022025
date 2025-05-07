@@ -31,3 +31,10 @@ output "total_sum" {
 output "character_enemy_output" {
   value = local.character_enemy_map
 }
+
+output "total_output"{
+   value=[for sport in local.total_output:sport]
+
+}
+
+
