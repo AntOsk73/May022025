@@ -4,6 +4,6 @@ locals{
   lengthsa=length(local.servicename)
 }
 
-winterlistOfSports=["icehockey","snowboarding","iceskating"]
+winterlistOfSports=["weight lifting","swimming","jogging"]
   total_output = ["150", "150", "150"]
   characters = ["luke", "yoda", "darth"]
