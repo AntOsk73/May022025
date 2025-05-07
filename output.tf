@@ -11,4 +11,6 @@ output "lengthsa"{
 
 output "wintersportslist"{
     value=[for sport in local.winterlistOfSports:sport]
+    total_output = ["150", "150", "150"]
+    characters = ["luke", "yoda", "darth"]
 }
