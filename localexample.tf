@@ -4,6 +4,8 @@ locals{
   lengthsa=length(local.servicename)
 
 top5restaurants=["Pizzaria 900" , "Il Focolaio" , "Damas" , "Chase" , "WaterLemon"]
+food = ["Pizza", "Pasta", "Salad" , "Croissant", "Protein bar"]
+character_food_map =   { for character in local.characters: # Convert character list to a set
 
 winterlistOfSports=["weightlifting","swimming","jogging"]
   total_output = ["1973", "2025", "2035"]
