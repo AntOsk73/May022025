@@ -3,7 +3,7 @@ locals{
   forum="bessamemucho"
   lengthsa=length(local.servicename)
 
-top5restaurants=["Pizzaria 900" , "Il Focolaio" , "Damas" , "Chase" , "WaterLemon"
+top5restaurants=["Pizzaria 900" , "Il Focolaio" , "Damas" , "Chase" , "WaterLemon"]
 
 winterlistOfSports=["weightlifting","swimming","jogging"]
   total_output = ["1973", "2025", "2035"]
