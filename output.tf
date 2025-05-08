@@ -33,7 +33,7 @@ output "character_enemy_output" {
 }
 
 output "top5restaurants"{
-   value=[for sport in local.op5restaurants:sport]
+   value=[for sport in local.top5restaurants:sport]
 
 }
 
