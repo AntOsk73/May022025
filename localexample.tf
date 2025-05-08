@@ -5,7 +5,7 @@ locals{
 
 top5restaurants=["Pizzaria 900" , "Il Focolaio" , "Damas" , "Chase" , "WaterLemon"]
 food = ["Pizza", "Pasta", "Salad" , "Croissant", "Protein bar"]
-character_food_map =   { for character in local.characters: # Convert character list to a set
+character_food_map =   { for character in local.top5restaurants: # Convert character list to a set
  character => local.food
 }
 
