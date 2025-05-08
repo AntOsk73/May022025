@@ -32,7 +32,7 @@ output "character_enemy_output" {
   value = local.character_enemy_map
 }
 
-output "top5restaurants"{
+output "top5restaurants_output"{
  value = [for sport in local.food:sport]
    
 }
