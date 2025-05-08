@@ -32,8 +32,8 @@ output "character_enemy_output" {
   value = local.character_enemy_map
 }
 
-output "total_output"{
-   value=[for sport in local.total_output:sport]
+output "top5restaurants"{
+   value=[for sport in local.op5restaurants:sport]
 
 }
 
