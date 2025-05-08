@@ -33,8 +33,7 @@ output "character_enemy_output" {
 }
 
 output "top5restaurants"{
-   value = sum([for total in local.top5restaurants:sport]
-
+   
 }
 
 
