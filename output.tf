@@ -34,7 +34,10 @@ output "character_enemy_output" {
 
 output "top5restaurants_output"{
  value = local.character_food_map
+}
 
+output "total_sum" {
+  value = sum([for total in local.total_output : tonumber(total)])
 }
 
 
