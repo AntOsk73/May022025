@@ -19,6 +19,6 @@ winterlistOfSports=["weightlifting","swimming","jogging"]
 
 }
 
-listoffavoritenumbers=["My favorite numbers are"
+listoffavoritenumbers=["Myfavorite numbers are"
   total_number = ["42", "77", "13", "98", "3", "64", "55", "27", "89", "6"]
 }
