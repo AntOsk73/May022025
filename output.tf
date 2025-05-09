@@ -53,7 +53,7 @@ output "lowercased_word" {
 }
 
 output "extract_mcit" {
-  value = substr(var.full_text, 27, 6)
+  value = substr(var.full_text, 25, 6)
 }
 /*
 "I love the country called Canada, it is awesome"
