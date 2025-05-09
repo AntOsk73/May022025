@@ -29,6 +29,11 @@ variable "account_replication_type"{
   default="ZRS"
 }
 
+variable "number"{
+  type = list(string)
+  default=["42", "77", "13", "98", "3", "64", "55", "27", "89", "6"]
+}
+
 variable "environment"{
   type=string
   default="prod"
