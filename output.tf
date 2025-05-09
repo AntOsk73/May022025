@@ -36,8 +36,8 @@ output "top5restaurants_output"{
  value = local.character_food_map
 }
 
-output "total_sum" {
-  value = sum([for total in local.total_number : tonumber(total)])
+output "total_numbers" {
+  value = sum([for total in local.total_numbers : tonumber(total)])
 }
 
 
