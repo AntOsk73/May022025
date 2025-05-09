@@ -43,3 +43,8 @@ variable "sentence" {
   type        = string
   default = "A sentence to convert to uppercase"
 }
+
+variable "sentence" {
+  type        = string
+  default = "I AM A STUDENT AT MCIT"
+}
