@@ -44,6 +44,10 @@ output "total_liststring" {
   value = sum([for total in var.number : tonumber(total)])
 }
 
+output "uppercased_sentence" {
+  value = upper(var.sentence)
+}
+
 
 
 
