@@ -48,6 +48,10 @@ output "uppercased_sentence" {
   value = upper(var.sentence)
 }
 
+output "lowercased_sentence" {
+  value = lower(var.sentence)
+}
+
 
 
 
