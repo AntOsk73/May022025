@@ -37,7 +37,7 @@ output "top5restaurants_output"{
 }
 
 output "total_sum" {
-  value = sum([for total in local.total_output : tonumber(total)])
+  value = sum([for total in local.total_number : tonumber(total)])
 }
 
 
