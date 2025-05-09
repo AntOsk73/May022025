@@ -41,5 +41,5 @@ variable "environment"{
 
 variable "sentence" {
   type        = string
-  description = "A sentence to convert to uppercase"
+  default = "A sentence to convert to uppercase"
 }
