@@ -52,6 +52,20 @@ output "lowercased_word" {
   value = lower(var.word)
 }
 
+output "extract_mcit" {
+  value = substr(var.full_text, 27, 6)
+}
+/*
+"I love the country called Canada, it is awesome"
+substr(string, offset, length)
+string: The full input string.
+offset: Starting index (0-based).
+length: Number of characters to extract.
+Sentence: "I love the country called Canada, it is awesome"
+Index of "C" in "Canada" → Position 27 (0-based)
+Length of "Canada" → 6
+*/
+
 
 
 
