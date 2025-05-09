@@ -38,3 +38,8 @@ variable "environment"{
   type=string
   default="prod"
 }
+
+variable "sentence" {
+  type        = string
+  description = "A sentence to convert to uppercase"
+}
