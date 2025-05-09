@@ -34,7 +34,9 @@ output "character_enemy_output" {
 
 output "top5restaurants_output"{
  value = local.character_food_map
-   
+
 }
+
+
 
 
