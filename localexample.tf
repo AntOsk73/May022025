@@ -18,4 +18,7 @@ winterlistOfSports=["weightlifting","swimming","jogging"]
       character => local.enemies_destroyed
 
 }
+
+listoffavoritenumbers=["My favorite numbers are"
+total_output = ["42", "77", "13", "98", "3", "64", "55", "27", "89", "6"]--->sum
 }
