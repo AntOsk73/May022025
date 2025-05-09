@@ -41,7 +41,7 @@ output "total_numbers" {
 }
 
 output "total_liststring" {
-  value = sum([for total in local. : tonumber(total)])
+  value = sum([for total in local.number : tonumber(total)])
 }
 
 
