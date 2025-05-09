@@ -48,3 +48,9 @@ variable "word" {
   type        = string
   default = "I AM A STUDENT AT MCIT"
 }
+
+variable "full_text" {
+type=string
+  default = "I love the country called Canada, it is awesome"
+}              
+
