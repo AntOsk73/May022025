@@ -62,7 +62,7 @@ string: The full input string.
 offset: Starting index (0-based).
 length: Number of characters to extract.
 Sentence: "I love the country called Canada, it is awesome"
-Index of "C" in "Canada" → Position 27 (0-based)
+Index of "C" in "Canada" → Position 26 (0-based)
 Length of "Canada" → 6
 */
 
