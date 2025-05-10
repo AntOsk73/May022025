@@ -52,7 +52,7 @@ output "lowercased_word" {
   value = lower(var.word)
 }
 
-output "extract_mcit" {
+output "extract_canada" {
   value = substr(var.full_text, 26, 6)
 }
 /*
