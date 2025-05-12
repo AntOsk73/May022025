@@ -31,7 +31,9 @@ sentence_2 = "Poutine should be a food group."
 sentence_3  = "Smoked meat is not a sandwich. It's a religion."
 vowels      = regexall("[aeiouAEIOU]", local.sentence_3)
 vowel_count = length(local.vowels)
-  
+
+sentence_4 = "Why does St-Laurent never sleep?" 
+
 
 }
 
