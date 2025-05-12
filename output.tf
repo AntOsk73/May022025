@@ -82,4 +82,8 @@ output "Reversed" {
   value = join("", reverse(split("", local.quote)))
 }
 
+output "Replacing_potholes" {
+  value = replace(local.quote, "potholes", "hotdogs")
+}
+
 
