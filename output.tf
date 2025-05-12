@@ -116,7 +116,7 @@ output "extract_group" {
 }
 
 output "sentence_3_vowel_count" {
-  value = local.vowel_count
+  value = length(regexall(local.vowels, local.sentence_3))
 }
 
 
