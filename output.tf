@@ -90,4 +90,8 @@ output "has_zip" {
   value = can(regex("zip", local.quote))  # true or false
 }
 
+output "other_quotes" {
+  value = join(" | ", concat(local.other_quotes, [local.quote]))
+}
+
 
