@@ -70,7 +70,9 @@ output "upper_quote" {
   value = upper(local.quote)
 }
 
-
+output "lower_quote" {
+  value = lower(local.quote)
+}
 
 
 
