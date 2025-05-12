@@ -94,7 +94,7 @@ output "other_quotes" {
   value = join(" | ", concat(local.other_quotes, [local.quote]))
 }
 
-output "QuoteBy_spaces" {
+output "Word_split" {
   value = split(" ", local.quote)
 }
 
