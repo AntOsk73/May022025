@@ -111,4 +111,8 @@ output "Reversing" {
   value = join("", reverse(split("", local.sentence1)))
 }
 
+output "extract_group" {
+  value = substr(local.quote, 25, 29)  # "group: "
+}
+
 
