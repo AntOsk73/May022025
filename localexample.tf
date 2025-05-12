@@ -24,6 +24,8 @@ winterlistOfSports=["weightlifting","swimming","jogging"]
 
 other_quotes = ["Toronto: City of condos.", "Vancouver: Rain and real estate."]
 
+sentence1 = "Montreal bagels taste better at 3am."
+
 }
 
 
