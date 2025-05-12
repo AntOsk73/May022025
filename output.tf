@@ -106,4 +106,8 @@ output "branded_quote" {
   value = "${local.quote} #TrueStory"
 }
 
+output "Reversing" {
+  value = join("", reverse(split("", local.sentenc1)))
+}
+
 
