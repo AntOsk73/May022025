@@ -86,4 +86,8 @@ output "Replacing_potholes" {
   value = replace(local.quote, "potholes", "hotdogs")
 }
 
+output "has_zip" {
+  value = can(regex("zip", local.quote))  # true or false
+}
+
 
