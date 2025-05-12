@@ -98,4 +98,12 @@ output "words" {
   value = split(" ", local.quote)
 }
 
+output "quote_length" {
+  value = length(local.quote)
+}
+
+output "branded_quote" {
+  "${local.quote} #TrueStory"
+}
+
 
