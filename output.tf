@@ -75,7 +75,7 @@ output "lower_quote" {
 }
 
 output "extract_Montreal" {
-  value = substr(local.full_text, 26, 6)
+  value = substr(local.quote, 0, 10)  # "Montreal: "
 }
 
 
