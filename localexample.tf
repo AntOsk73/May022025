@@ -28,6 +28,8 @@ sentence1 = "Montreal bagels taste better at 3am."
 
 sentence_2 = "Poutine should be a food group."
 
+sentence_3 = "Smoked meat is not a sandwich. It's a religion."
+
 }
 
 
