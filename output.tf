@@ -79,7 +79,7 @@ output "extract_Montreal" {
 }
 
 output "Reverse the String" {
-  reversed = join("", reverse(split("", local.quote)))
+  value = join("", reverse(split("", local.quote)))
 }
 
 
