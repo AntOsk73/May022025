@@ -112,7 +112,7 @@ output "Reversing" {
 }
 
 output "extract_group" {
-  value = substr(local.quote, 25, 29)  # "group: "
+  value = substr(local.sentence_2, 25, 29)  # "group: "
 }
 
 
