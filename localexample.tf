@@ -22,6 +22,7 @@ winterlistOfSports=["weightlifting","swimming","jogging"]
 
  quote = "Montreal: Where potholes have their own zip code."
 
+other_quotes = ["Toronto: City of condos.", "Vancouver: Rain and real estate."]
 
 }
 
