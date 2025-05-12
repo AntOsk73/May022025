@@ -78,6 +78,8 @@ output "extract_Montreal" {
   value = substr(local.quote, 0, 10)  # "Montreal: "
 }
 
-
+output "Reverse the String" {
+  reversed = join("", reverse(split("", local.quote)))
+}
 
 
