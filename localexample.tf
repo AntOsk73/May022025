@@ -20,6 +20,8 @@ winterlistOfSports=["weightlifting","swimming","jogging"]
 
  total_numbers = ["42", "77", "13", "98", "3", "64", "55", "27", "89", "6"]
 
+ quote = "Montreal: Where potholes have their own zip code."
+
 
 }
 
