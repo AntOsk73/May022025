@@ -66,6 +66,10 @@ Index of "C" in "Canada" → Position 26 (0-based)
 Length of "Canada" → 6
 */
 
+output "upper_quote" {
+  value = upper(local.quote)
+}
+
 
 
 
