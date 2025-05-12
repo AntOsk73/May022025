@@ -95,7 +95,7 @@ output "other_quotes" {
 }
 
 output "Split_bySpaces" {
-  words = split(" ", local.quote)
+  value = split(" ", local.quote)
 }
 
 
