@@ -26,6 +26,8 @@ other_quotes = ["Toronto: City of condos.", "Vancouver: Rain and real estate."]
 
 sentence1 = "Montreal bagels taste better at 3am."
 
+sentence_2 = "Poutine should be a food group."
+
 }
 
 
