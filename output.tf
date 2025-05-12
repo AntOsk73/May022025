@@ -115,9 +115,7 @@ output "extract_group" {
   value = substr(local.sentence_2, 25, 29)  # "group: "
 }
 
-output "vowels_count" {
-  value = local.vowel_sentence_3
-}
+
 
 
 
