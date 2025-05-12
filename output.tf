@@ -67,45 +67,45 @@ Index of "C" in "Canada" → Position 26 (0-based)
 Length of "Canada" → 6
 */
 
-output "upper_quote" {
+/*output "upper_quote" {
   value = upper(local.quote)
-}
+}*/
 
-output "lower_quote" {
+/*output "lower_quote" {
   value = lower(local.quote)
-}
+}*/
 
-output "extract_Montreal" {
+/*output "extract_Montreal" {
   value = substr(local.quote, 0, 10)  # "Montreal: "
-}
+}*/
 
-output "Reversed" {
+/*output "Reversed" {
   value = join("", reverse(split("", local.quote)))
-}
+}*/
 
-output "Replacing_potholes" {
+/*output "Replacing_potholes" {
   value = replace(local.quote, "potholes", "hotdogs")
-}
+}*/
 
-output "has_zip" {
+/*output "has_zip" {
   value = can(regex("zip", local.quote))  # true or false
-}
+}*/
 
 output "other_quotes" {
   value = join(" | ", concat(local.other_quotes, [local.quote]))
 }
 
-output "words" {
+/*output "words" {
   value = split(" ", local.quote)
-}
+}*/
 
-output "quote_length" {
+/*output "quote_length" {
   value = length(local.quote)
-}
+}*/
 
-output "branded_quote" {
+/*output "branded_quote" {
   value = "${local.quote} #TrueStory"
-}
+}*/
 
 output "Reversing" {
   value = join("", reverse(split("", local.sentence1)))
