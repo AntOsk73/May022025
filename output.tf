@@ -103,7 +103,7 @@ output "quote_length" {
 }
 
 output "branded_quote" {
-  "${local.quote} #TrueStory"
+  value = "${local.quote} #TrueStory"
 }
 
 
