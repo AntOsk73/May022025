@@ -119,6 +119,10 @@ output "vowel_count" {
   value = local.vowel_count
 }
 
+output "Replacing_spaces" {
+  value = replace(local.sentence_4, " ", "_")
+}
+
 
 
 
