@@ -108,7 +108,7 @@ output "other_quotes" {
 }*/
 
 output "Reversing" {
-  value = join("", reverse(split("", local.sentence1)))
+  value = join("", reverse(split("", local.sentence_1)))
 }
 
 output "extract_group" {
