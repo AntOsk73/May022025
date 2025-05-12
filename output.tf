@@ -107,7 +107,7 @@ output "branded_quote" {
 }
 
 output "Reversing" {
-  value = join("", reverse(split("", local.sentenc1)))
+  value = join("", reverse(split("", local.sentence1)))
 }
 
 
