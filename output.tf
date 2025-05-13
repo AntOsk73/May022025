@@ -91,9 +91,9 @@ Length of "Canada" → 6
   value = can(regex("zip", local.quote))  # true or false
 }*/
 
-output "other_quotes" {
+/*output "other_quotes" {
   value = join(" | ", concat(local.other_quotes, [local.quote]))
-}
+}*/
 
 /*output "words" {
   value = split(" ", local.quote)
