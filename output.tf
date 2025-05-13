@@ -123,8 +123,8 @@ output "Replacing_spaces" {
   value = replace(local.sentence_4, " ", "_")
 }
 
-/*output "words" {
-  value = split(" ", local.quote)
+output "Montreal" {
+  value = split(" ", local.sentence_5)
 }*/
 
 
