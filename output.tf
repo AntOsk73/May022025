@@ -125,7 +125,7 @@ output "Replacing_spaces" {
 
 output "Montreal" {
   value = split(" ", local.sentence_5)
-}*/
+}
 
 
 
