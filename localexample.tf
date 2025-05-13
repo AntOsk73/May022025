@@ -34,6 +34,8 @@ vowel_count = length(local.vowels)
 
 sentence_4 = "Why does St-Laurent never sleep?" 
 
+sentence_5 = "Bagels in Montreal are boiled, not baked."
+
 
 }
 
