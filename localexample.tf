@@ -35,7 +35,7 @@ vowel_count = length(local.vowels)
 sentence_4 = "Why does St-Laurent never sleep?" 
 
 sentence_5 = "Bagels in Montreal are boiled, not baked."
-words     = split(" ", local.text)
+words     = split(" ", local.sentence_5)
 third_word = local.words[2] # Index starts at 0
 
 }
