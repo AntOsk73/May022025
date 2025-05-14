@@ -127,7 +127,7 @@ output "third_word" {
   value = local.third_word
 }
 
-output "text_1" {
+output "excercise" {
   value = local.text_1
 }
 
