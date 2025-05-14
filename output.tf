@@ -127,6 +127,10 @@ output "third_word" {
   value = local.third_word
 }
 
+output "text_1" {
+  value = local.text_1
+}
+
 
 
 
