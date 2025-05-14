@@ -131,7 +131,9 @@ output "excercise" {
   value = split ("," , local.text_1)
 }
 
-
+output "excercise" {
+  value = (local.text_1)
+}
 
 
 
