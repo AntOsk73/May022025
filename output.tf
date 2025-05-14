@@ -131,11 +131,13 @@ output "excercise" {
   value = split ("," , local.text_1)
 }
 
-output "excercise" {
+output "exercise_1" {
   value = local.text_1
 }
 
-
+output "excercise_2" {
+  value = length (split ("," , local.text_1))
+}
 
 
 
