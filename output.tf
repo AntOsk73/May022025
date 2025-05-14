@@ -128,7 +128,7 @@ output "third_word" {
 }
 
 output "excercise" {
-  value = local.text_1
+  value = split (",", local.text_1
 }
 
 
