@@ -132,7 +132,7 @@ output "excercise" {
 }
 
 output "excercise" {
-  value = (local.text_1)
+  value = local.text_1
 }
 
 
