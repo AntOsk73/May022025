@@ -139,5 +139,8 @@ output "excercise_2" {
   value = length (split ("," , local.text_1))
 }
 
+output "excercise_3" {
+  value = length (split ("," , local.text_1) -1)
+}
 
 
