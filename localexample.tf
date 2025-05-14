@@ -38,7 +38,6 @@ sentence_5 = "Bagels in Montreal are boiled, not baked."
 words     = split(" ", local.sentence_5)
 third_word = local.words[2] # Index starts at 0
 
-sentence_6 = "Is this the best food city in Canada?
 
 }
 
