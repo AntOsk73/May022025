@@ -147,3 +147,8 @@ output "excercise_4" {
   value = element(["Antoine", "Ovadia", "Onome", "Sean", "Negar"], 4)
 }
 
+output "excercise_5" {
+  value = element(["Antoine", "Ovadia", "Onome", "Sean", "Negar"], 3)
+}
+
+
