@@ -144,6 +144,6 @@ value = element(split(",", local.text_1) , length (split ("," , local.text_1)) -
 }
 
 output "excercise_4" {
-value = element(["Antoine","Ovadia",Onome","Sean","Negar"],5)
+  value = element(["Antoine", "Ovadia", "Onome", "Sean", "Negar"], 4)
 }
 
