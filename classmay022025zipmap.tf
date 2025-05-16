@@ -3,7 +3,7 @@ variable "environments_antoinecoffee" {
 }
 
 variable "service_names_town" {
-  default = ["Beirut", "Kaslik", "Jounié", "Byblos"]
+  default = ["Beirut", "Kaslik", "Sidon", "Byblos"]
 }
 
 locals {
