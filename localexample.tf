@@ -40,7 +40,7 @@ third_word = local.words[2] # Index starts at 0
 
 servicename = "cloudCadabra"
 env = "non-prod"
-alltogether = "${local.cloudCadabra + local.env}"
+alltogether = "${local.cloudCadabra} + {local.env}"
 
 }
 
