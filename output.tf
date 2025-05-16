@@ -151,7 +151,7 @@ output "excercise_5" {
   value = element(["Antoine", "Ovadia", "Onome", "Sean", "Negar"], 3)
 
 output "printoutFull" {
-  value = 
+  value = local.alltogether
 }
 
 
