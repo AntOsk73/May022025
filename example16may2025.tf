@@ -1,5 +1,5 @@
 variable "service_name" {
-  default = "mcit"
+  default = "antoine"
 }
 
 variable "environments" {
@@ -13,16 +13,16 @@ locals {
   }
 }
 
-resource "azurerm_storage_account" "mcitstoremay2025" {
+resource "azurerm_storage_account" "antoinestoremay2025" {
   for_each = local.full_service_names
 
 
   name                     = each.value
-  resource_group_name      = "mcitresources"
+  resource_group_name      = "antoineresources"
   location                 = "East US"
   account_tier              = "Standard"
   account_replication_type = "LRS"
 }
-output "mcit16may2025"{
+output "antoine16may2025"{
   value=local.full_service_names
 }
