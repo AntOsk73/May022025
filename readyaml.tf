@@ -8,7 +8,9 @@ locals{
         sku_name=linuxapps.sku_name     
       }
     ]
-])}
+])
+
+}
 
 
 resource "azurerm_service_plan" "batcha06sp" {
