@@ -13,28 +13,21 @@ locals{
 
 }
 
-
-resource "azurerm_resource_group" "mcitdevrm" {
-  name     = "example-resources"
-  location = "West Europe"
-}
-
-resource "azurerm_service_plan" "mcitdevrm" {
-  name                = "example"
+resource "azurerm_service_plan" "batcha06sp" {
+  for_each            ={for sp in local.windows_web_app_list: "${sp.name}"=>sp }
+  name                = each.value.name
   resource_group_name = azurerm_resource_group.mcitdevrm.name
   location            = azurerm_resource_group.mcitdevrm.location
-  sku_name            = "P1v2"
-  os_type             = "Windows"
+  os_type             = each.value.os_type
+  sku_name            = each.value.sku_name
 }
 
-resource "azurerm_windows_web_app" "example" {
-  name                = "example"
+resource "azurerm_windows_web_app" "batcha06webapp" {
+  for_each            = azurerm_service_plan.batcha06sp
+  name                = each.value.name
   resource_group_name = azurerm_resource_group.mcitdevrm.name
-  location            = azurerm_service_plan.mcitdevrm.location
-  service_plan_id     = azurerm_service_plan.mcitdevrm.id
-
-  site_config {}
-}
+  location            = azurerm_resource_group.mcitdevrm.location
+  service_plan_id     = each.value.id
 
   site_config {}
 }
