@@ -1,21 +1,15 @@
 locals{
-  linux_app=[for f in fileset("${path.module}/var.mcit.yaml", "[^_]*.yaml") : yamldecode(file("${path.module}/configs/${f}"))]
+  linux_app=[for f in fileset("${path.module}/mcityaml", "[^_]*.yaml") : yamldecode(file("${path.module}/configs/${f}"))]
   linux_app_list = flatten([
     for app in local.linux_app : [
-      for linuxapps in try(app.listofVMs, []) :{
-        name=thirdwindowsapp
-        os_type=Windows
-        sku_name=P5mv3  
+      for linuxapps in try(app.windowsapplist, []) :{
+      
       }
     ]
 ])
 
 }
 
-
-provider "azurerm" {
-  features {}
-}
 
 resource "azurerm_resource_group" "mcitdevrm" {
   name     = "example-resources"
