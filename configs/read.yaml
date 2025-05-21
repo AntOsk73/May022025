@@ -1,1 +1,7 @@
-
+listofVMs:
+  - name: My1stvm   
+    os_type: Linux
+    sku_name: P1v2
+  - name: My2ndvm 
+    os_type: Linux
+    sku_name: P1v2
