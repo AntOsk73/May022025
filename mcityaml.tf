@@ -1,25 +1,43 @@
+locals{
+  linux_app=[for f in fileset("${path.module}/var.mcit.yaml", "[^_]*.yaml") : yamldecode(file("${path.module}/configs/${f}"))]
+  linux_app_list = flatten([
+    for app in local.linux_app : [
+      for linuxapps in try(app.listofVMs, []) :{
+        name=thirdwindowsapp
+        os_type=Windows
+        sku_name=P5mv3  
+      }
+    ]
+])
+
+}
+
+
 provider "azurerm" {
   features {}
 }
 
 resource "azurerm_resource_group" "mcitdevrm" {
   name     = "example-resources"
-  location = "canada central"
+  location = "West Europe"
 }
 
 resource "azurerm_service_plan" "mcitdevrm" {
-  name                = "mcitdevrm"
+  name                = "example"
   resource_group_name = azurerm_resource_group.mcitdevrm.name
   location            = azurerm_resource_group.mcitdevrm.location
   sku_name            = "P1v2"
   os_type             = "Windows"
 }
 
-resource "azurerm_windows_web_app" "mcitdevrm" {
-  name                = "mcitdevrm"
+resource "azurerm_windows_web_app" "example" {
+  name                = "example"
   resource_group_name = azurerm_resource_group.mcitdevrm.name
   location            = azurerm_service_plan.mcitdevrm.location
   service_plan_id     = azurerm_service_plan.mcitdevrm.id
+
+  site_config {}
+}
 
   site_config {}
 }
