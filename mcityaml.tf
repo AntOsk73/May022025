@@ -3,9 +3,9 @@ locals{
   linux_app_list = flatten([
     for app in local.linux_app : [
       for linuxapps in try(app.windowsapplist, []) :{
-          name=linuxapps.name
-          os_type=Windows
-          sku_name=P5mv3
+          name=antoine.name
+          os_type=antoine.os_type
+          sku_name=antoine.sku_name   
       
       }
     ]
