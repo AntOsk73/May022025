@@ -4,8 +4,8 @@ locals{
     for app in local.windows_web_app : [
       for windowsapps in try(app.windowsapplist, []) :{
           name=windowsapps.name
-          os_type=windows_web_app.os_type
-          sku_name=windows_web_app.sku_name   
+          os_type=windowsapps.os_type
+          sku_name=windowsapps.sku_name   
       
       }
     ]
