@@ -20,7 +20,7 @@ resource "azurerm_resource_group" "mcitdevrm" {
 }
 
 resource "azurerm_service_plan" "theyoungpope" {
-  for_each            ={for sp in local.windows_web_app_list: "${sp.name}"=>sp }
+  for_each            ={for sp in local.windows_app_list: "${sp.name}"=>sp }
   name                = each.value.name
   resource_group_name = azurerm_resource_group.mcitdevrm.name
   location            = azurerm_resource_group.mcitdevrm.location
