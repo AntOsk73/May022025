@@ -1,6 +1,7 @@
 locals{
-  windows_web__app=[for f in fileset("${path.module}/mcityaml", "[^_]*.yaml") : yamldecode(file("${path.module}/mcityaml/${f}"))]
-  windows_web_app_list = flatten([
+folderlocation = "mcityaml"
+  windowindows_app=[for file in fileset("${path.module}/${local.folderlocation}", "[^_]*.yaml") : yamldecode(file("${path.module}/${local.folderlocation}/${file}"))]
+  windows_app_list = flatten([
     for app in local.windows_web_app : [
       for windowsapps in try(app.windowsapplist, []) :{
           name=windowsapps.name
