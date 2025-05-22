@@ -14,6 +14,11 @@ folderlocation = "mcityaml"
 
 }
 
+resource "azurerm_resource_group" "mcitdevrm" {
+  name     = "mcitwindowsapp"
+  location = "canadacentral"
+}
+
 resource "azurerm_service_plan" "theyoungpope" {
   for_each            ={for sp in local.windows_web_app_list: "${sp.name}"=>sp }
   name                = each.value.name
