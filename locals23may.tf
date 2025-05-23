@@ -5,3 +5,6 @@ locals {
     ["kiwi"]
   ]
 }
+
+output "23may"{
+    value = local.nested_list
