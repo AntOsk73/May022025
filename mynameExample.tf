@@ -20,6 +20,11 @@ resource "azurerm_windows_web_app" "example" {
   site_config {}
 }
 
+variable "myname" {
+type=string
+default="antoine"
+}
+
 
 
 
