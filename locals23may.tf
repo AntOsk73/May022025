@@ -6,6 +6,6 @@ locals {
   ]
 }
 
-output "23may"{
+output "may23"{
     value = local.nested_list
 }
