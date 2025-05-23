@@ -14,7 +14,7 @@ resource "azurerm_service_plan" "myserviceplan" {
 resource "azurerm_windows_web_app" "example" {
   name                = "${var.myname}wwa"
   resource_group_name = azurerm_resource_group.mynamegroup.name
-  location            = azurerm_service_plan.mynamegroup.location
+  location            = azurerm_resource_group.mynamegroup.location
   service_plan_id     = azurerm_service_plan.myserviceplan.id
 
   site_config {}
