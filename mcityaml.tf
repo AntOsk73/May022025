@@ -1,5 +1,6 @@
 locals{
-folderlocation = "mcityaml"
+#folderlocation = "mcityaml"
+#just using an output instead
   windows_app=[for file in fileset("${path.module}/${local.folderlocation}", "[^_]*.yaml") : yamldecode(file("${path.module}/${local.folderlocation}/${file}"))]
   windows_app_list = flatten([
     for app in local.windows_app : [
