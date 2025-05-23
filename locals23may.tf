@@ -8,3 +8,4 @@ locals {
 
 output "23may"{
     value = local.nested_list
+}
