@@ -22,3 +22,5 @@ resource "azurerm_windows_web_app" "example" {
 
 
 
+
+
