@@ -1,10 +1,10 @@
 resource "azurerm_resource_group" "mynamegroup" {
-  name     = "${local.myname}rm"
+  name     = "${var.myname}rm"
   location = "canadacentral"
 }
 
 resource "azurerm_service_plan" "myserviceplan" {
-  name                = "${local.myname}sp"
+  name                = "${var.myname}sp"
   resource_group_name = azurerm_resource_group.mynamegroup.name
   location            = azurerm_resource_group.mynamegroup.location
   sku_name            = "P1v2"
@@ -12,7 +12,7 @@ resource "azurerm_service_plan" "myserviceplan" {
 }
 
 resource "azurerm_windows_web_app" "example" {
-  name                = "${local.myname}wwa"
+  name                = "${var.myname}wwa"
   resource_group_name = azurerm_resource_group.mynamegroup.name
   location            = azurerm_service_plan.mynamegroup.location
   service_plan_id     = azurerm_service_plan.myserviceplan.id
