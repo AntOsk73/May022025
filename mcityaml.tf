@@ -29,7 +29,7 @@ resource "azurerm_service_plan" "theyoungpope" {
 }
 
 resource "azurerm_windows_web_app" "theyoungpope" {
-  for_each            = azurerm_service_plan.batcha06sp
+  for_each            = azurerm_service_plan.theyoungpope
   name                = each.value.name
   resource_group_name = azurerm_resource_group.mcitdevrm.name
   location            = azurerm_resource_group.mcitdevrm.location
