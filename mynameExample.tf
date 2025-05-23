@@ -1,43 +1,24 @@
-locals{
-  linux_app=[for f in fileset("${path.module}/configs", "[^_]*.yaml") : yamldecode(file("${path.module}/configs/${f}"))]
-  linux_app_list = flatten([
-    for app in local.linux_app : [
-      for linuxapps in try(app.listoflinuxapp, []) :{
-        name=linuxapps.name
-        os_type=linuxapps.os_type
-        sku_name=linuxapps.sku_name     
-      }
-    ]
-])
-    waf_policy=[for f in fileset("${path.module}/configs", "[^_]*.yaml") : yamldecode(file("${path.module}/configs/${f}"))]
-    waf_policy_list = flatten([
-    for policy in local.waf_policy : [
-      for policies in try(policy.listofwafpolicies, []) :{
-        name=policies.name
-        custom_rules=policies.custom_rules
-        managed_rules=policies.managed_rules
-        }
-    ]
-])
+resource "azurerm_resource_group" "mynamegroup" {
+  name     = "${local.myname}rm"
+  location = "canadacentral"
 }
 
-
-
-resource "azurerm_service_plan" "batcha06sp" {
-  for_each            ={for sp in local.linux_app_list: "${sp.name}"=>sp }
-  name                = each.value.name
-  resource_group_name = azurerm_resource_group.azureresourcegroup.name
-  location            = azurerm_resource_group.azureresourcegroup.location
-  os_type             = each.value.os_type
-  sku_name            = each.value.sku_name
+resource "azurerm_service_plan" "myserviceplan" {
+  name                = "${local.myname}sp"
+  resource_group_name = azurerm_resource_group.mynamegroup.name
+  location            = azurerm_resource_group.mynamegroup.location
+  sku_name            = "P1v2"
+  os_type             = "Windows"
 }
 
-resource "azurerm_linux_web_app" "batcha06webapp" {
-  for_each            = azurerm_service_plan.batcha06sp
-  name                = each.value.name
-  resource_group_name = azurerm_resource_group.azureresourcegroup.name
-  location            = azurerm_resource_group.azureresourcegroup.location
-  service_plan_id     = each.value.id
+resource "azurerm_windows_web_app" "example" {
+  name                = "${local.myname}wwa"
+  resource_group_name = azurerm_resource_group.mynamegroup.name
+  location            = azurerm_service_plan.mynamegroup.location
+  service_plan_id     = azurerm_service_plan.myserviceplan.id
 
   site_config {}
 }
+
+
+
