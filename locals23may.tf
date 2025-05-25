@@ -13,5 +13,5 @@ output "may23list"{
 
 
 output "flattened_list_output" {
-  value = flatten(local.flat_list)
+  value = flatten(local.nested_list)
 }
