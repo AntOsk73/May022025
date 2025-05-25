@@ -12,6 +12,6 @@ output "may23list"{
 }
 
 
-output "flattened_list_output" {
+output "flattened_list_reviewed" {
   value = flatten(local.nested_list)
 }
