@@ -8,7 +8,7 @@ locals {
 flat_list = flatten(local.nested_list)
 }
 
-output "may23"{
+output "may23list"{
     value = local.nested_list
 }
 
