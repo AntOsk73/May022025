@@ -5,7 +5,6 @@ locals {
     ["kiwi"]
 ]
 
-flat_list = flatten(local.nested_list)
 }
 
 output "may23list"{
@@ -14,5 +13,5 @@ output "may23list"{
 
 
 output "flattened_list_output" {
-  value = local.flat_list
+  value = flatten(local.flat_list)
 }
