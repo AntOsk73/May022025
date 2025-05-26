@@ -155,8 +155,8 @@ output "printoutFull" {
   value = local.alltogether
 }
 
-output "upper_names" {
-  value = [for s in var.names : upper(s)]
+output "uppercase_names" {
+  value = [for name in local.names : upper(name)]
 }
 
 
