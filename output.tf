@@ -170,5 +170,6 @@ output "result_map" {
 output "filtered_regions" {
   value = local.us_regions
 }
+}
 
 
