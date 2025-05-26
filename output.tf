@@ -157,4 +157,5 @@ output "printoutFull" {
 
 output "uppercased_names" {
   value = upper(local.names)
+}
 
