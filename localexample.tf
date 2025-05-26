@@ -44,6 +44,10 @@ alltogether = "${local.servicecloud} ${local.env}"
 
 names = ["eastus", "westeurope", "centralindia"]
 
+locals {
+  vms = ["vm1", "vm2", "vm3"]
+}
+
 }
 
 
