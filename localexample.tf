@@ -42,6 +42,8 @@ servicecloud = "cloudCadabra"
 env = "non-prod"
 alltogether = "${local.servicecloud} ${local.env}"
 
+names = ["eastus", "westeurope", "centralindia"]
+
 }
 
 
