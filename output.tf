@@ -159,5 +159,9 @@ output "uppercase_names" {
   value = [for name in local.names : upper(name)]
 }
 
+output "vm_map_with_index" {
+  value = { for index, vm in local.vms : index => vm }
+}
+
 
 
