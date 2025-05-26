@@ -20,6 +20,18 @@ resource "azurerm_subnet" "antoinesubnet" {
   virtual_network_name = azurerm_virtual_network.antoinesubnet.name
   address_prefixes     = ["10.0.1.0/24"]
 
+resource "azurerm_subnet" "antoinesubnet" {
+  name                 = "antoinesubnet-subnet"
+  resource_group_name  = azurerm_resource_group.mcitlevel7.name
+  virtual_network_name = azurerm_virtual_network.antoinesubnet.name
+  address_prefixes     = ["10.0.2.0/24"]
+
+resource "azurerm_subnet" "antoinesubnet" {
+  name                 = "antoinesubnet-subnet"
+  resource_group_name  = azurerm_resource_group.mcitlevel7.name
+  virtual_network_name = azurerm_virtual_network.antoinesubnet.name
+  address_prefixes     = ["10.0.3.0/24"]
+
   delegation {
     name = "delegation"
 
