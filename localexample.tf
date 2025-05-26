@@ -47,12 +47,12 @@ names = ["eastus", "westeurope", "centralindia"]
 
 vms = ["vm1", "vm2", "vm3"]
 
-  locals {
+  
   keys   = ["env", "team", "owner"]
   values = ["prod", "devops", "alice"]
   
   combined_map = zipmap(local.keys, local.values)
-}
+
 
 }
 
