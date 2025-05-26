@@ -155,4 +155,6 @@ output "printoutFull" {
   value = local.alltogether
 }
 
+"uppercased_sentence" {
+  value = upper(var.names)
 
