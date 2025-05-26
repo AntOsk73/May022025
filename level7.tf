@@ -9,7 +9,7 @@ resource "azurerm_resource_group" "antoinelevel7" {
 
 resource "azurerm_virtual_network" "antoinegroupname" {
   name                = "antoinegroupname-vnet"
-  address_space       = ["10.0.0.0/16"]
+  address_space       = ["10.0.1.0/24"]
   location            = azurerm_resource_group.antoinegroup.location
   resource_group_name = azurerm_resource_group.mcitlevel7.name
 }
