@@ -163,5 +163,8 @@ output "vm_map_with_index" {
   value = { for index, vm in local.vms : index => vm }
 }
 
+output "result_map" {
+  value = local.combined_map
+}
 
 
