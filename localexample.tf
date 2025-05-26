@@ -54,9 +54,11 @@ vms = ["vm1", "vm2", "vm3"]
   combined_map = zipmap(local.keys, local.values)
 
 
-  regions = ["eastus", "westeurope", "southindia", "centralus"]
-  us_regions = [for region in local.regions : region if contains(region, "us")]
+
+regions = ["eastus", "westeurope", "southindia", "centralus"]
+us_regions = [for region in local.regions : region if contains(region, "us")]
 }
+
 
 
 
