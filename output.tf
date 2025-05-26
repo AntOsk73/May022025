@@ -156,7 +156,7 @@ output "printoutFull" {
 }
 
 output "upper_names" {
-  value = upper(var.names)
+  value = [for s in var.names : upper(s)]
 }
 
 
