@@ -56,7 +56,7 @@ vms = ["vm1", "vm2", "vm3"]
 
 
 regions = ["eastus", "westeurope", "southindia", "centralus"]
-us_regions = [for region in local.regions : region if list(region, "us")]
+  us_regions = [for r in local.regions : r if contains(r, "us")]
 }
 
 
