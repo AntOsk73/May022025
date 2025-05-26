@@ -155,6 +155,6 @@ output "printoutFull" {
   value = local.alltogether
 }
 
-"uppercased_names" {
+output "uppercased_names" {
   value = upper(local.names)
 
