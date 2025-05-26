@@ -46,6 +46,11 @@ names = ["eastus", "westeurope", "centralindia"]
 
 
 vms = ["vm1", "vm2", "vm3"]
+
+  keys   = ["env", "team", "owner"]
+  values = ["prod", "devops", "alice"]
+
+
 }
 
 
