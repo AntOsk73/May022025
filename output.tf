@@ -167,6 +167,11 @@ output "result_map" {
   value = local.combined_map
 }
 
+output "total_apps" {
+  value = length(local.apps)
+  description = "The total number of applications in the list."
+}
+
 
 
 
