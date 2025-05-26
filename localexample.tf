@@ -54,8 +54,6 @@ vms = ["vm1", "vm2", "vm3"]
   combined_map = zipmap(local.keys, local.values)
 
 
-
-locals {
   apps = ["api", "frontend", "worker", "db"]
 }
 
