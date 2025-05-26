@@ -55,8 +55,8 @@ vms = ["vm1", "vm2", "vm3"]
 
 
 
-regions = ["eastus", "westeurope", "southindia", "centralus"]
-  us_regions = [for regions in local.regions : regions if contains(regions, "us")]
+locals {
+  apps = ["api", "frontend", "worker", "db"]
 }
 
 
