@@ -156,5 +156,5 @@ output "printoutFull" {
 }
 
 "uppercased_names" {
-  value = upper(var.names)
+  value = upper(local.names)
 
