@@ -1,21 +1,18 @@
 locals {
-  region       = "eastus"
-  is_primary   = local.region == "eastus" ? true : false
-  environment  = local.is_primary ? "production" : "staging"
+  subnet_config = yamldecode(file("subnets.yaml")).subnets
 }
- 
-output "region" {
-  value = local.region
+
+resource "azurerm_virtual_network" "local_28thsubnets.tf" {
+  name                = "my-vnet"
+  address_space       = ["10.0.0.0/16"]
+  location            = "eastus"       #
+  resource_group_name = "my-resource-group"
 }
- 
-output "is_primary_region" {
-  value = local.is_primary
+
+resource "azurerm_subnet" "dynamic_subnets" {
+  for_each             = local.subnet_config
+  name                 = each.key
+  resource_group_name  = azurerm_virtual_network.main.resource_group_name
+  virtual_network_name = azurerm_virtual_network.main.name
+  address_prefixes     = [each.value]
 }
- 
-output "environment" {
-  value = local.environment
-}
-it should do the following:
- region is set to "eastus"
-is_primary checks if the region is "eastus" → sets true or false
-environment uses if-else: if it's primary, it's "production", else "staging"
