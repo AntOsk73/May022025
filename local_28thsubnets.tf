@@ -1,18 +1,8 @@
 locals {
-  subnet_config = yamldecode(file("subnets.yaml")).subnets
-}
+  region      = "eastus"
+  is_primary  = local.region == "eastus" ? true : false
+  environment = local.is_primary ? "production" : "staging"
+  subnet_data = yamldecode(file("${path.module}/may28/subnets.yaml"))
 
-resource "azurerm_virtual_network" "local_28thsubnets.tf" {
-  name                = "my-vnet"
-  address_space       = ["10.0.0.0/16"]
-  location            = "eastus"       #
-  resource_group_name = "my-resource-group"
-}
-
-resource "azurerm_subnet" "dynamic_subnets" {
-  for_each             = local.subnet_config
-  name                 = each.key
-  resource_group_name  = azurerm_virtual_network.main.resource_group_name
-  virtual_network_name = azurerm_virtual_network.main.name
-  address_prefixes     = [each.value]
-}
+resource "azurerm_subnet" "subnets" {
+  for_each    
