@@ -3,5 +3,5 @@ output "storage_account_id" {
 }
 
 output "storage_account_name" {
-  value = azurerm_storage_antoineoskystoragemodule.name
+  value = azurerm_storage_account.antoineoskystoragemodule.name
 }
