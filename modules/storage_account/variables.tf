@@ -34,7 +34,7 @@ variable "kind" {
 variable "access_tier" {
   description = "Defines the access tier (Hot or Cool)."
   type        = string
-  default     = "Hot"
+  default     = "Cold"
 }
 
 variable "tags" {
