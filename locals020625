@@ -5,5 +5,5 @@ locals {
     prod    = "Production"
   }
 
-  environment = lookup(local.env_names, trimspace(terraform.workspace), "Unknown")
+  environment = lookup(local.env_names, terraform.workspace, "Unknown")
 }
