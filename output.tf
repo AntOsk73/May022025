@@ -107,69 +107,74 @@ Length of "Canada" → 6
   value = "${local.quote} #TrueStory"
 }*/
 
-output "Reversing" {
+/*output "Reversing" {
   value = join("", reverse(split("", local.sentence_1)))
-}
+}*/
 
-output "extract_group" {
+/*output "extract_group" {
   value = substr(local.sentence_2, 25, 29)  # "group: "
-}
+}*/
 
-output "vowel_count" {
+/*output "vowel_count" {
   value = local.vowel_count
-}
+}*/
 
-output "Replacing_spaces" {
+/*output "Replacing_spaces" {
   value = replace(local.sentence_4, " ", "_")
-}
+}*/
 
-output "third_word" {
+/*output "third_word" {
   value = local.third_word
-}
+}*/
 
-output "excercise" {
+/*output "excercise" {
   value = split ("," , local.text_1)
-}
+}*/
 
-output "exercise_1" {
+/*output "exercise_1" {
   value = local.text_1
-}
+}*/
 
-output "excercise_2" {
+/*output "excercise_2" {
   value = length (split ("," , local.text_1))
-}
+}*/
 
-output "excercise_3" {
+/*output "excercise_3" {
 value = element(split(",", local.text_1) , length (split ("," , local.text_1)) -1)
-}
+}*
 
-output "excercise_4" {
+/*output "excercise_4" {
   value = element(["Antoine", "Ovadia", "Onome", "Sean", "Negar"], 4)
-}
+}*/
 
-output "excercise_5" {
+/*output "excercise_5" {
   value = element(["Antoine", "Ovadia", "Onome", "Sean", "Negar"], 3)
-}
+}*/
 
-output "printoutFull" {
+/*output "printoutFull" {
   value = local.alltogether
-}
+}*/
 
-output "uppercase_names" {
+/*output "uppercase_names" {
   value = [for name in local.names : upper(name)]
-}
+}*/
 
-output "vm_map_with_index" {
+/*output "vm_map_with_index" {
   value = { for index, vm in local.vms : index => vm }
-}
+}*/
 
-output "result_map" {
+/*output "result_map" {
   value = local.combined_map
-}
+}*/
 
-output "total_apps" {
+/*output "total_apps" {
   value = length(local.apps)
   description = "The total number of applications in the list."
+}*/
+
+output "selected_environment_name" {
+  value       = local.environment
+  description = "The friendly name of the current environment based on workspace."
 }
 
 
