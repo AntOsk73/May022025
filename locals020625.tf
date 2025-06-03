@@ -5,5 +5,5 @@ locals {
     prod    = "Production"
   }
 
-  environment = lookup(local.env_names, "Pro", "Unknown")
+  environment = lookup(local.env_names, "prod", "staging")
 }
