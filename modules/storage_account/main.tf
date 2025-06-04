@@ -1,4 +1,4 @@
-resource "azurerm_storage_account" "aoskystorageaccount" {
+resource "azurerm_storage_account" "antoineoskystoragemodule" {
   name                     = var.name
   resource_group_name      = var.resource_group_name
   location                 = var.location
