@@ -1,6 +1,5 @@
-variable "resource_groups" {
-  type = map(object({
-    name     = string
-    location = string
-  }))
+resource "azurerm_resource_group" "antoineosky_terraform" {
+  name     = var.name
+  location = "West Europe"
 }
+
