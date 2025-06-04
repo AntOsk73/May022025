@@ -34,7 +34,7 @@ module "mystorage" {
   }
 }
 
-module "myforeachmcitstorage" {
+/*module "myforeachmcitstorage" {
   source              = "./modules/storage_account"
   name                = "samistorageacc12345"
   resource_group_name = azurerm_resource_group.antoineoskyform.name
@@ -47,4 +47,4 @@ module "myforeachmcitstorage" {
     environment = "dev"
     team        = "infra"
   }
-}
+}*/
