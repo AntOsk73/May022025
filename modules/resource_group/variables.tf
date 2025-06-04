@@ -1,5 +1,5 @@
 variable "name" {
-  description = "The name of the resource group."
+  description = "The name of the storage account."
   type        = string
 }
 
