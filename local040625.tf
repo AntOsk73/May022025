@@ -1,14 +1,14 @@
 locals {
   storage_accounts = {
     sa1 = {
-      name                     = "samistorageacc1"
+      name                     = "aostorageacc1"
       account_tier             = "Standard"
       account_replication_type = "LRS"
       kind                     = "StorageV2"
       access_tier              = "Hot"
     }
     sa2 = {
-      name                     = "samistorageacc2"
+      name                     = "aostorageacc2"
       account_tier             = "Standard"
       account_replication_type = "GRS"
       kind                     = "StorageV2"
