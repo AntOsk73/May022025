@@ -1,4 +1,4 @@
-variable "storage_accounts" {
+module "storage_accounts" {
   type = map(string)
   default = {
     "storage1" = "beirut"
