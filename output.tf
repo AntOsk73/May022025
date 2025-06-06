@@ -186,7 +186,7 @@ output "upperCase_test1" {
 }
 
 output "sub_test" {
-  value = subtr(var.sub_stringtest, 14, 9)
+  value = substr(var.sub_stringtest, 14, 9)
 }
 
 
