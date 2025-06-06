@@ -63,3 +63,7 @@ variable "numbers_as_listOfStrings"{
   type = list(string)
   default=["50", "70", "100", "150", "200"]
 }
+
+variable "test1_touppercase" {
+  default = "i work for national bank"
+}
