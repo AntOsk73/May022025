@@ -197,6 +197,11 @@ output "applying_extract" {
   value = substr(var.inputText_Toexctract, var.inputStart_index, var.input_length)
 }
 
+output "vowel_count" {
+  value = length([for c in split("", lower(var.input_vowels)) : c if contains(["a", "e", "i", "o", "u"], c)])
+}
+
+
 
 
 
