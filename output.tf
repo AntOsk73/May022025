@@ -193,16 +193,17 @@ value = element(split(",", local.text_1) , length (split ("," , local.text_1)) -
   value = join("", [for i in range(length(var.test_reverse) -1, -1, -1) : substr(var.test_reverse, i, 1)])
 }*/
 
-output "applying_extract" {
+/*output "applying_extract" {
   value = substr(var.inputText_Toexctract, var.inputStart_index, var.input_length)
-}
+}*/
 
-output "vowel_count" {
+/*output "vowel_count" {
   value = length([for c in split("", lower(var.input_vowels)) : c if contains(["a", "e", "i", "o", "u"], c)])
+}*/
+
+output "text_toReplace" {
+  value = replace(var.inputText_toReplace," ", "_")
 }
-
-
-
 
 
 
