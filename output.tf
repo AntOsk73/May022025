@@ -181,17 +181,20 @@ value = element(split(",", local.text_1) , length (split ("," , local.text_1)) -
   value    = sum([for test in var.numbers_as_listOfStrings : tonumber(test)])
 }*/
 
-output "upperCase_test1" {
+/*output "upperCase_test1" {
   value = upper(var.test1_touppercase)
-}
+}*?
 
-output "sub_test" {
+/*output "sub_test" {
   value = substr(var.sub_stringtest, 14, 9)
-}
+}*/
 
-output "applying_reverse" {
+/*output "applying_reverse" {
   value = join("", [for i in range(length(var.test_reverse) -1, -1, -1) : substr(var.test_reverse, i, 1)])
-}
+}*/
+
+output "applying_extract" {
+  value = subst
 
 
 
