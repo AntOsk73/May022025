@@ -73,5 +73,5 @@ variable "sub_stringtest" {
 }
 
 variable "test_reverse" {
-  default = "You are welcome Antoine!
+  default = "You are welcome Antoine!"
 }
