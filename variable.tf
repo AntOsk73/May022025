@@ -89,6 +89,6 @@ variable "input_length" {
 }
 
 variable "input_vowels" {
-  defailt = "I love Terraform!"
+  default = "I love Terraform!"
 }
 
