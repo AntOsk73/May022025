@@ -71,3 +71,7 @@ variable "test1_touppercase" {
 variable "sub_stringtest" {
   default = "I am learning Terraform"
 }
+
+variable "test_reverse" {
+  default = "You are welcome Antoine!
+}
