@@ -58,3 +58,8 @@ variable "folderlocation" {
 type=string
 default="mcityaml"
 }
+
+variable "numbers_as_listOfStrings"{
+  type = list(string)
+  default=["50", "70", "100", "150", "200"]
+}
