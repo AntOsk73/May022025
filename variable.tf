@@ -84,7 +84,7 @@ variable "inputStart_index" {
   default = 13
 }
 
-variable "input_length {
+variable "Input_length" {
   default = 9
 }
 
