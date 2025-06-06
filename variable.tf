@@ -75,3 +75,16 @@ variable "sub_stringtest" {
 variable "test_reverse" {
   default = "You are welcome Antoine!"
 }
+
+variable "input_textToexctract" {
+  default = "Bloc Focus / Formation."
+}
+
+variable "input"start_index" {
+  default = 13
+}
+
+varriable "input_length {
+  default = 9
+}
+
