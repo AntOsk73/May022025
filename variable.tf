@@ -88,3 +88,7 @@ variable "input_length" {
   default = 9
 }
 
+variable "input_vowels" {
+  defailt = "I love Terraform!"
+}
+
