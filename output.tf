@@ -185,9 +185,11 @@ output "upperCase_test1" {
   value = upper(var.test1_touppercase)
 }
 
-output "lowerCase_test1" {
-  value = lower(var.test1_touppercase)
+output "sub_test" {
+  value = subtr(var.sub_stringtest)
 }
+
+
 
 
 
