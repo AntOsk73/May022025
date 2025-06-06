@@ -177,9 +177,11 @@ value = element(split(",", local.text_1) , length (split ("," , local.text_1)) -
   description = "The friendly name of the current environment based on workspace."
 }*/
 
-output "sum_of_converted_numbers" {
+/*output "sum_of_converted_numbers" {
   value    = sum([for test in var.numbers_as_listOfStrings : tonumber(test)])
-}
+}*/
+
+output "
 
 
 
