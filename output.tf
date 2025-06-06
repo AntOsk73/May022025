@@ -172,10 +172,10 @@ value = element(split(",", local.text_1) , length (split ("," , local.text_1)) -
   description = "The total number of applications in the list."
 }*/
 
-output "selected_environment_name" {
+/*output "selected_environment_name" {
   value       = local.environment
   description = "The friendly name of the current environment based on workspace."
-}
+}*/
 
 
 
