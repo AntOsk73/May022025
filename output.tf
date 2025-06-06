@@ -201,7 +201,7 @@ value = element(split(",", local.text_1) , length (split ("," , local.text_1)) -
   value = length([for c in split("", lower(var.input_vowels)) : c if contains(["a", "e", "i", "o", "u"], c)])
 }*/
 
-output "text_toReplace" {
+output "underscore_text" {
   value = replace(var.inputText_toReplace," ", "_")
 }
 
