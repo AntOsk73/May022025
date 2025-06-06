@@ -181,9 +181,13 @@ value = element(split(",", local.text_1) , length (split ("," , local.text_1)) -
   value    = sum([for test in var.numbers_as_listOfStrings : tonumber(test)])
 }*/
 
-output "
+output "uppercase_test1" {
+  value = upper(var.test1_touppercase)
+}
 
-
+output "lowercase_test1" {
+  value = lower(var.test1_touppercase)
+}
 
 
 
