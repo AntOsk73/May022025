@@ -76,11 +76,11 @@ variable "test_reverse" {
   default = "You are welcome Antoine!"
 }
 
-variable "input_textToexctract" {
+variable "inputText_Toexctract" {
   default = "Bloc Focus / Formation."
 }
 
-variable "input"start_index" {
+variable "inputStart_index" {
   default = 13
 }
 
