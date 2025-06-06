@@ -67,3 +67,7 @@ variable "numbers_as_listOfStrings"{
 variable "test1_touppercase" {
   default = "i work for national bank"
 }
+
+variable "sub_stringtest" {
+  default = "I am learning Terraform"
+}
