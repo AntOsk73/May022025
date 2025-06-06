@@ -92,3 +92,6 @@ variable "input_vowels" {
   default = "I love Terraform!"
 }
 
+variable "inputText_toReplace" {
+  default = "What's the difference between integers and numbers?"
+}
