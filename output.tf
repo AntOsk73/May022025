@@ -189,6 +189,12 @@ output "sub_test" {
   value = substr(var.sub_stringtest, 14, 9)
 }
 
+output "applying_reverse" {
+  value = join("", [for i in range(length(var.
+}
+
+
+
 
 
 
