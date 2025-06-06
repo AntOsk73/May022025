@@ -194,7 +194,8 @@ value = element(split(",", local.text_1) , length (split ("," , local.text_1)) -
 }*/
 
 output "applying_extract" {
-  value = subst
+  value = subst(var.inputText_Toexctract, var.inputStart_index, var.input_length)
+}
 
 
 
