@@ -190,7 +190,7 @@ output "sub_test" {
 }
 
 output "applying_reverse" {
-  value = join("", [for i in range(length(var.
+  value = join("", [for i in range(length(var.test_reverse) -1, -1, -1) substr(var.input_text, i, 1)])
 }
 
 
