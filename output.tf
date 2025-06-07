@@ -226,7 +226,7 @@ output "printed_names" {
 }
 
 output "split_names" {
-  value = split(" , ", local.names_test)
+  value = split(",", local.names_test)
 }
 
 
