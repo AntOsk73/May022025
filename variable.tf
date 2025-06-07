@@ -117,7 +117,7 @@ variable "odd_pick" {
 }
 
 variable "input_backwards" {
-  default = " Late-night diners are a blessing."
-{
+  default = "Late-night diners are a blessing."
+}
 
 
