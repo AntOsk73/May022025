@@ -233,6 +233,10 @@ output "lengthSplit_names" {
   value = length(split(",", local.names_test))
 }
 
+output "third_person" {
+  value = element(split(",", local.names_test), 2)
+}
+
 
 
 
