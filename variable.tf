@@ -112,7 +112,7 @@ variable "punctuation_list" {
  default =  [".", ",", "!", "?", ";", ":"]
 }
 
-variable "odd_list" {
+variable "odd_pick" {
   default = "Montreal's food scene is elite!"
 }
 
