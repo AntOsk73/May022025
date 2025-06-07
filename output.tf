@@ -221,7 +221,7 @@ output "even_characters" {
   value = join(" ", [for i in range(length(split(" ", var.input_backwards)) -1, -1, -1) : split(" ", var.input_backwards)[i]])
 }*/
 
-output "printed_names" {
+/*output "printed_names" {
   value = local.names_test
 }
 
@@ -235,7 +235,19 @@ output "lengthSplit_names" {
 
 output "third_person" {
   value = element(split(",", local.names_test), 2)
-}
+}*/
+
+/*output "print"{
+    value = local.servicename
+}*/
+
+/*output "secondprint"{
+    value = local.forum
+}*/
+ 
+/*output "lengthsa"{
+    value=local.lengthsa
+}*/
 
 
 
