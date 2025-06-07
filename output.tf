@@ -205,8 +205,8 @@ value = element(split(",", local.text_1) , length (split ("," , local.text_1)) -
   value = replace(var.inputText_toReplace," ", "_")
 }*/
 
-output "extracrd_word" {
-  value = split(' ', var.getWord_fromText)[var.word_index]
+output "extracted_word" {
+  value = split(" ", var.getWord_fromText)[var.word_index]
 }
 
 
