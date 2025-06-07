@@ -101,5 +101,5 @@ variable "getWord_fromText" {
 }
 
 variable "word_index" {
-  default = 3
+  default = 4
 }
