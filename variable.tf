@@ -120,8 +120,5 @@ variable "input_backwards" {
   default = "Late-night diners are a blessing."
 }
 
-variable "capital_letter" {
- default = "every foodie should visit once."
-}
 
 
