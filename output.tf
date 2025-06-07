@@ -237,17 +237,17 @@ output "third_person" {
   value = element(split(",", local.names_test), 2)
 }*/
 
-/*output "print"{
+output "print"{
     value = local.servicename
-}*/
+}
 
-/*output "secondprint"{
+output "secondprint"{
     value = local.forum
-}*/
+}
  
-/*output "lengthsa"{
+output "lengthsa"{
     value=local.lengthsa
-}*/
+}
 
 
 
