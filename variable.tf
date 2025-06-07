@@ -122,7 +122,7 @@ variable "input_backwards" {
 
 variable "capital_letter" {
   default = "every foodie should visit once"
-{
+}
 
 
 
