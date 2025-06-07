@@ -209,7 +209,7 @@ value = element(split(",", local.text_1) , length (split ("," , local.text_1)) -
   value = split(" ", var.getWord_fromText)[var.word_index]
 }*/
 
-output "punctuation_removed" {
+output "clean_text" {
   value = join("", [for c in var.inputRemove_punctuation : c if !contains(var.punctuation_list, c)])
 }
 
