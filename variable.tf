@@ -95,3 +95,11 @@ variable "input_vowels" {
 variable "inputText_toReplace" {
   default = "What's the difference between integers and numbers?"
 }
+
+variable "getWord_fromText" {
+  default = "Bagels in Montreal are boiled, not baked"
+}
+
+variable "word_index" {
+  default = 3
+}
