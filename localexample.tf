@@ -1,5 +1,5 @@
 locals{
-  servicename="bessamemucho"
+  /*servicename="bessamemucho"
   forum="bessamemucho"
   lengthsa=length(local.servicename)
 
@@ -7,7 +7,7 @@ top5restaurants=["Pizzaria 900" , "Il Focolaio" , "Damas" , "Chase" , "WaterLemo
 food = ["Pizza", "Pasta", "Salad" , "Croissant", "Protein bar"]
 character_food_map =   { for character in local.top5restaurants: # Convert character list to a set
  character => local.food
-}
+}*/
 
 
 winterlistOfSports=["weightlifting","swimming","jogging"]
