@@ -103,3 +103,11 @@ variable "getWord_fromText" {
 variable "word_index" {
   default = 4
 }
+
+variable "inputRemove_punctuation" {
+ default = "Hello Antoine! Welcome to Terraform."
+}
+
+variable "punctuation_list" {
+ default =  [".", ",", "!", "?", ";", ":"]
+}
