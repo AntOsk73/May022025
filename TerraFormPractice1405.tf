@@ -3,6 +3,6 @@ locals {
 }
 
 locals {
-  names_test = " "Myriam, Jamil, Claire, Moustapha, Simon"
+  names_test = "Myriam, Jamil, Claire, Moustapha, Simon"
 }
 
