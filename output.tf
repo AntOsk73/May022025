@@ -205,8 +205,12 @@ value = element(split(",", local.text_1) , length (split ("," , local.text_1)) -
   value = replace(var.inputText_toReplace," ", "_")
 }*/
 
-output "extracted_word" {
+/*output "extracted_word" {
   value = split(" ", var.getWord_fromText)[var.word_index]
+}*/
+
+output "punctuation_removed" {
+  value = join("", [for c in var.inputRemove_punctuation : c if !contains(var.punctuation_list, c)])
 }
 
 
