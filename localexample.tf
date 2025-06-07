@@ -57,6 +57,15 @@ vms = ["vm1", "vm2", "vm3"]
   apps = ["api", "frontend", "worker", "db"]
 }*/
 
+locals{
+  servicename  =  "ServiceNow"
+  forum        =  "letsdiscussit"
+  lengthsa     =  length(local.servicename)
+}
+
+
+
+
 
 
 
