@@ -217,9 +217,17 @@ output "even_characters" {
   value = join("", [for i in range(0, length(var.odd_pick), 2) : substr(var.odd_pick, i, 1)])
 }
 
-output "backwars_words" {
+/*output "backwars_words" {
   value = join(" ", [for i in range(length(split(" ", var.input_backwards)) -1, -1, -1) : split(" ", var.input_backwards)[i]])
+}*/
+
+output "capitalized_text" {
+  value = join(" ", [for word in split(" ", var.capital_1stletter) : upper(substr(word, 0, 1)) + substr(word, 1, length(word)-1)])
 }
+
+
+
+
 
 
 
