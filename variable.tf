@@ -116,3 +116,8 @@ variable "odd_pick" {
   default = "Montreal's food scene is elite!"
 }
 
+variable "input_backwards" {
+  default = " Late-night diners are a blessing."
+{
+
+
