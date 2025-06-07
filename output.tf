@@ -210,9 +210,8 @@ value = element(split(",", local.text_1) , length (split ("," , local.text_1)) -
 }*/
 
 output "clean_text" {
-  value = join("", [for c in var.remove_fromList : c if !contains(var.punctuation_list, c)])
+ value = join("", [for c in split("", var.input_text) : c if !contains(var.punctuation_list, c)])
 }
-
 
 
 
