@@ -221,6 +221,10 @@ output "even_characters" {
   value = join(" ", [for i in range(length(split(" ", var.input_backwards)) -1, -1, -1) : split(" ", var.input_backwards)[i]])
 }*/
 
+output "printed_names" {
+  value = local.text_1
+}
+
 
 
 
