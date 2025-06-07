@@ -221,9 +221,6 @@ output "even_characters" {
   value = join(" ", [for i in range(length(split(" ", var.input_backwards)) -1, -1, -1) : split(" ", var.input_backwards)[i]])
 }*/
 
-output "capitalized_text" {
-  value = join(" ", [for word in split(" ", var.capital_letter) : upper("${substr(word, 0, 1)}") + substr(word, 1, length(word) - 1)])
-}
 
 
 
