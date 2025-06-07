@@ -222,7 +222,7 @@ output "even_characters" {
 }*/
 
 output "capitalized_text" {
-  value = join(" ", [for word in split(" ", var.capital_1stletter) : upper(substr(word, 0, 1)) + substr(word, 1, length(tostring(word)) - 1)])
+  value = join(" ", [for word in split(" ", var.capital_letter) : upper(substr(word, 0, 1)) + substr(word, 1, length(tostring(word)) - 1)])
 }
 
 
