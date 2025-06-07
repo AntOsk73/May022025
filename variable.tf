@@ -111,3 +111,8 @@ variable "remove_fromList" {
 variable "punctuation_list" {
  default =  [".", ",", "!", "?", ";", ":"]
 }
+
+variable "odd_list" {
+  default = "Montreal's food scene is elite!"
+}
+
