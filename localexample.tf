@@ -1,5 +1,5 @@
-locals{
-  /*servicename="bessamemucho"
+/*locals{
+  servicename="bessamemucho"
   forum="bessamemucho"
   lengthsa=length(local.servicename)
 
