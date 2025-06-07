@@ -104,7 +104,7 @@ variable "word_index" {
   default = 4
 }
 
-variable "inputRemove_punctuation" {
+variable "remove_fromList" {
  default = "Hello Antoine! Welcome to Terraform."
 }
 
