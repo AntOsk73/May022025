@@ -222,7 +222,7 @@ output "even_characters" {
 }*/
 
 output "printed_names" {
-  value = local.text_1
+  value = local.names_test
 }
 
 
