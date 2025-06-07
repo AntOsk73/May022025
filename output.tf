@@ -201,9 +201,12 @@ value = element(split(",", local.text_1) , length (split ("," , local.text_1)) -
   value = length([for c in split("", lower(var.input_vowels)) : c if contains(["a", "e", "i", "o", "u"], c)])
 }*/
 
-output "underscore_text" {
+/*output "underscore_text" {
   value = replace(var.inputText_toReplace," ", "_")
-}
+}*/
+
+output "extracrd_word" {
+  value = split(' ', 
 
 
 
