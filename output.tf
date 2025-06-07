@@ -225,6 +225,10 @@ output "printed_names" {
   value = local.names_test
 }
 
+output "split_names" {
+  value = split(" , ", local.names_test)
+}
+
 
 
 
