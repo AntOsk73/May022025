@@ -229,6 +229,10 @@ output "split_names" {
   value = split(",", local.names_test)
 }
 
+output "lengthSplit_names" {
+  value = length(split(",", local.names_test))
+}
+
 
 
 
