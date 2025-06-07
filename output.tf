@@ -206,7 +206,9 @@ value = element(split(",", local.text_1) , length (split ("," , local.text_1)) -
 }*/
 
 output "extracrd_word" {
-  value = split(' ', 
+  value = split(' ', var.getWord_fromText)[var.word_index]
+}
+
 
 
 
