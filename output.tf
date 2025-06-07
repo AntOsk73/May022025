@@ -213,7 +213,7 @@ value = element(split(",", local.text_1) , length (split ("," , local.text_1)) -
  value = join("", [for c in split("", var.remove_fromList) : c if !contains(var.punctuation_list, c)])
 }*/
 
-output "even_characters"
+output "even_characters" {
   value = join("", [for i in range(0, length(var.odd_pick), 2) : substr(var.odd_pick, i, 1)])
 }
 
