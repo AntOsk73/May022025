@@ -124,9 +124,6 @@ variable "servicename" {
  default = "mcitnews"
 }
 
-variable "environments" {
-  default = ["dev", "qa", "stage", "prod"]
-}
 
 
 
