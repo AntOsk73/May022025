@@ -28,10 +28,12 @@ output "antoine16may2025"{
 }
 
 variable "service_storage" {
-  "dev"    = "antoinedev"
-  "qa"     = "antoineqa"
-  "stage"  = "antoinesage"
-  "prod"   = "antoineprod"
+ default   = {
+    "dev"    = "antoinedev"
+    "qa"     = "antoineqa"
+    "stage"  = "antoinesage"
+    "prod"   = "antoineprod"
+ }
 }
 
 resource "azurerm_storage_account" "aosky_storageaccount" {
