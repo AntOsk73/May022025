@@ -269,7 +269,7 @@ output "lengthsa"{
   value = values(local.environement)
 }*/
 
-output "storage_example" {
+output "storage_account_created" {
   value = service_storage
 }
 
