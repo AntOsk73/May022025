@@ -67,6 +67,7 @@ locals{
   servicecloud = "azurermtesing"
   env = "prod"
   alltogether = "${local.servicecloud} ${local.env}"
+
 }*/
 
 locals{
