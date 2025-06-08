@@ -61,7 +61,7 @@ locals{
   servicename  =  "ServiceNow"
   forum        =  "letsdiscussit"
   lengthsa     =  length(local.servicename)
-}*/
+}
 
 
 
