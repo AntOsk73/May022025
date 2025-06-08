@@ -42,7 +42,7 @@ resource "azurerm_storage_account" "aosky_storageaccount" {
   name                     = each.value
   resource_group_name      = "my-instance-group"
   location                 = "East US"
-  account_tier             = "Standard
+  account_tier             = "Standard"
   account_replication_type = "LRS"
 
 }
