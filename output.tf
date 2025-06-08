@@ -270,7 +270,8 @@ output "lengthsa"{
 }*/
 
 output "storage_example" {
-  value = var.
+  value = service_storage
+}
 
 
 
