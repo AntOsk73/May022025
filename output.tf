@@ -235,7 +235,7 @@ output "lengthSplit_names" {
 
 output "third_person" {
   value = element(split(",", local.names_test), 2)
-}*/
+}
 
 /*output "print"{
     value = local.servicename
@@ -255,6 +255,10 @@ output "theservice_name" {
 
 output "service_name_length" {
   value = length(var.servicename)
+}*/
+
+output "combined_values" {
+  value = local.alltogether
 }
 
 
