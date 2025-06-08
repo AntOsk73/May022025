@@ -65,13 +65,13 @@ locals{
 
 
 
-  locals{
+  locals {
   servicecloud = "azurermtesing"
   env = "prod"
   alltogether = "${local.servicecloud} ${local.env}"
 }*/
 
-locals{
+ locals{
     environement = {
      "dev"      = "t2.micro"
      "staging"  = "t2.medium"
