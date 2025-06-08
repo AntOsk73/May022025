@@ -265,6 +265,10 @@ output "selected_instance" {
   value = local.environement
 }
 
+output "instance_example" {
+  value = values(local.environement)
+}
+
 
 
 
