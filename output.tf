@@ -257,10 +257,13 @@ output "lengthsa"{
   value = length(var.servicename)
 }*/
 
-output "combined_values" {
+/*output "combined_values" {
   value = local.alltogether
-}
+}*/
 
+output "selected_instance" {
+  value = local.environements
+}
 
 
 
