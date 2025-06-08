@@ -120,7 +120,7 @@ variable "input_backwards" {
   default = "Late-night diners are a blessing."
 }
 
-var "servicename" {
+variable "servicename" {
  default = "mcitnews"
 }
 
