@@ -62,9 +62,11 @@ locals{
   forum        =  "letsdiscussit"
   lengthsa     =  length(local.servicename)*/
 
-servicecloud = "azurermtesing"
-env = "prod"
-alltogether = "${local.servicecloud} ${local.env}"
+
+locals{
+  servicecloud = "azurermtesing"
+  env = "prod"
+  alltogether = "${local.servicecloud} ${local.env}"
 }
 
 
