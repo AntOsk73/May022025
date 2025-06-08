@@ -26,3 +26,24 @@ resource "azurerm_storage_account" "antoinestoremay2025" {
 output "antoine16may2025"{
   value=local.full_service_names
 }
+
+variable "service_storage" {
+  "dev"    = "antoinedev"
+  "qa"     = "antoineqa"
+  "stage"  = "antoinesage"
+  "prod"   = "antoineprod"
+}
+
+resource "azurerm_storage_account" "aosky_storageaccount" {
+  for_each = var.service_storage
+
+  name                     = each.value
+  resource_group_name      = "my-instance-group"
+  location                 = "East US"
+  account_tier             = "Standard
+  account_replication_type = "LRS"
+
+}
+  
+
+
