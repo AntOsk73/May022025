@@ -253,7 +253,7 @@ output "theservice_name" {
   value = var.servicename
 }
 
-output "service_name_length"
+output "service_name_length" {
   value = length(var.servicename)
 }
 
