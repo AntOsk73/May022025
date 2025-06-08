@@ -63,11 +63,20 @@ locals{
   lengthsa     =  length(local.servicename)*/
 
 
-locals{
+/*locals{
   servicecloud = "azurermtesing"
   env = "prod"
   alltogether = "${local.servicecloud} ${local.env}"
+}*/
+
+locals{
+    environement = {
+     "dev"      = "t2.micro"
+     "staging"  = "t2.medium"
+     "prod"     = "t2.large"
 }
+}
+
 
 
 
