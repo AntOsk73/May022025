@@ -31,7 +31,7 @@ variable "service_storage" {
  default   = {
     "dev"    = "antoinedev"
     "qa"     = "antoineqa"
-    "stage"  = "antoinesage"
+    "stage"  = "antoinestage"
     "prod"   = "antoineprod"
  }
 }
