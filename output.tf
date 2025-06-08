@@ -261,13 +261,16 @@ output "lengthsa"{
   value = local.alltogether
 }*/
 
-output "selected_instance" {
+/*output "selected_instance" {
   value = local.environement
-}
+}*/
 
-output "instance_example" {
+/*output "instance_example" {
   value = values(local.environement)
-}
+}*/
+
+output "storage_example" {
+  value = var.
 
 
 
