@@ -270,7 +270,7 @@ output "lengthsa"{
 }*/
 
 output "storage_account_created" {
-  value = service_storage
+  value = var.service_storage
 }
 
 
