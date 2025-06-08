@@ -262,7 +262,7 @@ output "lengthsa"{
 }*/
 
 output "selected_instance" {
-  value = local.environements
+  value = local.environement
 }
 
 
