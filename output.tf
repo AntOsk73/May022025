@@ -249,11 +249,11 @@ output "lengthsa"{
     value=local.lengthsa
 }*/
 
-output "theservice_name" {
+/*output "theservice_name" {
   value = var.servicename
-}
+}*/
 
-output "service_name_length" {
+/*output "service_name_length" {
   value = length(var.servicename)
 }*/
 
