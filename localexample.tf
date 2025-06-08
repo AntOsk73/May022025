@@ -60,14 +60,15 @@ vms = ["vm1", "vm2", "vm3"]
 locals{
   servicename  =  "ServiceNow"
   forum        =  "letsdiscussit"
-  lengthsa     =  length(local.servicename)*/
+  lengthsa     =  length(local.servicename)
+}*/
+
 
 
   locals{
   servicecloud = "azurermtesing"
   env = "prod"
   alltogether = "${local.servicecloud} ${local.env}"
-
 }*/
 
 locals{
